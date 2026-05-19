@@ -1,0 +1,25 @@
+export default function Home() {
+  return (
+    <div style={{ textAlign: 'center', padding: '50px', fontFamily: 'Arial' }}>
+      <h1 style={{ color: '#e50914' }}>🌍 Connect to World Wide</h1>
+      <h2>🎬 Video Streaming Platform</h2>
+      <p>Welcome! Your site is working correctly.</p>
+      
+      <div style={{ marginTop: '30px' }}>
+        <button style={{ background: '#e50914', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+          Watch Video & Earn $0.005
+        </button>
+      </div>
+      
+      <div style={{ marginTop: '50px', background: '#f0f0f0', padding: '20px', borderRadius: '10px' }}>
+        <h3>💰 Your Earnings</h3>
+        <p>Total Views: 0 | Earnings: $0.00</p>
+        <p style={{ fontSize: '12px' }}>10,000 daily views = $50/day = $1,500/month</p>
+      </div>
+      
+      <div style={{ marginTop: '20px' }}>
+        <a href="/dashboard" style={{ color: 'blue' }}>View Dashboard →</a>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,31 @@
+export default function Dashboard() {
+  return (
+    <div style={{ textAlign: 'center', padding: '50px', fontFamily: 'Arial' }}>
+      <h1>📊 Earnings Dashboard</h1>
+      
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', marginTop: '30px' }}>
+        <div style={{ background: '#e0f7fa', padding: '20px', borderRadius: '10px' }}>
+          <h3>Today</h3>
+          <p style={{ fontSize: '24px', fontWeight: 'bold' }}>$0.00</p>
+        </div>
+        <div style={{ background: '#c8e6c9', padding: '20px', borderRadius: '10px' }}>
+          <h3>This Week</h3>
+          <p style={{ fontSize: '24px', fontWeight: 'bold' }}>$0.00</p>
+        </div>
+        <div style={{ background: '#ffecb3', padding: '20px', borderRadius: '10px' }}>
+          <h3>Total</h3>
+          <p style={{ fontSize: '24px', fontWeight: 'bold' }}>$0.00</p>
+        </div>
+      </div>
+      
+      <div style={{ marginTop: '50px', background: '#fff3cd', padding: '20px', borderRadius: '10px' }}>
+        <p>💡 Withdrawals available at $50 minimum</p>
+        <p>💳 Methods: PayPal, Bank Transfer, Crypto</p>
+      </div>
+      
+      <div style={{ marginTop: '30px' }}>
+        <a href="/" style={{ color: '#e50914' }}>← Back to Home</a>
+      </div>
+    </div>
+  );
+}
