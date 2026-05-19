@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Connect to World Wide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1>🌍 Connect to World Wide</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                    <a href="upload.html">Upload</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="container">
+            <h1>📊 Your Earnings Dashboard</h1>
+            
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Today's Views</h3>
+                    <div class="stat-number" id="todayViews">0</div>
+                    <p>+0 from yesterday</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Today's Earnings</h3>
+                    <div class="stat-number" id="todayEarningsDash">$0.00</div>
+                    <p>$0.005 per view</p>
+                </div>
+                <div class="stat-card">
+                    <h3>This Week</h3>
+                    <div class="stat-number" id="weekEarnings">$0.00</div>
+                    <p>7 days total</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Earnings</h3>
+                    <div class="stat-number" id="totalEarningsDash">$0.00</div>
+                    <p>Lifetime earnings</p>
+                </div>
+            </div>
+
+            <!-- Projections -->
+            <div class="projections">
+                <h2>📈 Earnings Projections</h2>
+                <div class="projection-grid">
+                    <div class="projection">
+                        <h4>Current Rate</h4>
+                        <p>$<span id="currentRate">0.00</span>/day</p>
+                    </div>
+                    <div class="projection">
+                        <h4>Monthly Projection</h4>
+                        <p>$<span id="monthlyProj">0.00</span></p>
+                    </div>
+                    <div class="projection">
+                        <h4>Yearly Projection</h4>
+                        <p>$<span id="yearlyProj">0.00</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Performance -->
+            <div class="video-performance">
+                <h2>🎥 Your Videos Performance</h2>
+                <div class="video-table" id="videoTable">
+                    <!-- Videos will load here -->
+                </div>
+            </div>
+
+            <!-- Withdrawal Section -->
+            <div class="withdrawal-section">
+                <h2>💸 Withdraw Earnings</h2>
+                <div class="withdrawal-card">
+                    <p>Available Balance: <strong id="availableBalance">$0.00</strong></p>
+                    <p class="min-withdraw">Minimum withdrawal: $50</p>
+                    
+                    <div class="withdraw-form">
+                        <input type="number" id="withdrawAmount" placeholder="Enter amount ($)" min="50">
+                        <select id="withdrawMethod">
+                            <option value="paypal">PayPal</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="crypto">Cryptocurrency (USDT)</option>
+                            <option value="mobile">Mobile Money (MTN/Airtel)</option>
+                        </select>
+                        <button id="withdrawBtn" class="btn-withdraw">Request Withdrawal</button>
+                    </div>
+                    
+                    <div class="withdrawal-info">
+                        <small>⚠️ Withdrawals processed within 3-5 business days. Processing fee: 2% for PayPal, 1% for Crypto.</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Earnings History -->
+            <div class="earnings-history">
+                <h2>📜 Earnings History</h2>
+                <div id="earningsHistory">
+                    <p class="no-data">No earnings yet. Start watching videos!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Connect to World Wide - Earn money watching videos</p>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
