@@ -1,0 +1,64 @@
+import { useState } from 'react';
+
+export default function Dashboard() {
+  const [videoUrl, setVideoUrl] = useState('');
+  const [videoTitle, setVideoTitle] = useState('');
+
+  const addVideo = () => {
+    // Save video to your list
+    const videos = JSON.parse(localStorage.getItem('myVideos') || '[]');
+    videos.push({ title: videoTitle, url: videoUrl });
+    localStorage.setItem('myVideos', JSON.stringify(videos));
+    alert('Video added! Check your homepage.');
+  };
+
+  return (
+    <div style={{ padding: '50px' }}>
+      <h1>📊 Video Upload Dashboard</h1>
+      
+      {/* Upload Section */}
+      <div style={{ background: '#f0f0f0', padding: '20px', borderRadius: '10px', marginBottom: '30px' }}>
+        <h2>Upload New Video</h2>
+        
+        <input
+          type="text"
+          placeholder="Video Title"
+          onChange={(e) => setVideoTitle(e.target.value)}
+          style={{ width: '100%', padding: '10px', margin: '10px 0' }}
+        />
+        
+        <input
+          type="text"
+          placeholder="Video URL (Cloudinary or YouTube link)"
+          onChange={(e) => setVideoUrl(e.target.value)}
+          style={{ width: '100%', padding: '10px', margin: '10px 0' }}
+        />
+        
+        <button onClick={addVideo} style={{ background: 'green', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px' }}>
+          Add Video to Site
+        </button>
+      </div>
+
+      {/* Earnings Display */}
+      <div style={{ background: 'white', padding: '20px', borderRadius: '10px', marginBottom: '30px' }}>
+        <h2>💰 Your Stats</h2>
+        <p>Today: $0.00 | This Week: $0.00 | Total: $0.00</p>
+        <p>💰 10,000 views = $50/day</p>
+      </div>
+
+      {/* Withdrawal */}
+      <div style={{ background: '#e0f7fa', padding: '20px', borderRadius: '10px' }}>
+        <h2>💸 Withdraw Earnings</h2>
+        <p>Balance: $0.00 (Need $50 minimum)</p>
+        <select style={{ padding: '10px', marginRight: '10px' }}>
+          <option>PayPal</option>
+          <option>Bank Transfer</option>
+          <option>Crypto (USDT)</option>
+        </select>
+        <button style={{ background: '#e50914', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px' }}>
+          Withdraw
+        </button>
+      </div>
+    </div>
+  );
+}
