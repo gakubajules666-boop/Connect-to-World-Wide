@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to World Wide - Watch Videos & Earn Money</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo" onerror="this.src='https://via.placeholder.com/40x40?text=WW'">
+                    <h1>🌍 Connect to World Wide</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="upload.html">Upload</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Watch Videos & <span class="highlight">Earn Money</span></h1>
+            <p>Every view puts money in your pocket! Watch videos, earn $0.005 per view, and withdraw at $50.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>10,000</h3>
+                    <p>Daily Views</p>
+                    <span class="earning">= $50/day</span>
+                </div>
+                <div class="stat">
+                    <h3>100,000</h3>
+                    <p>Daily Views</p>
+                    <span class="earning">= $500/day</span>
+                </div>
+                <div class="stat">
+                    <h3>$1,500</h3>
+                    <p>Monthly Potential</p>
+                    <span class="earning">with 10k daily views</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Earnings Banner -->
+    <div class="earnings-banner">
+        <div class="container">
+            <div class="earnings-card">
+                <h3>💰 Your Earnings Today</h3>
+                <div class="earnings-amount" id="todayEarnings">$0.00</div>
+                <p>Keep watching to earn more!</p>
+            </div>
+            <div class="earnings-card">
+                <h3>📊 Total Earnings</h3>
+                <div class="earnings-amount" id="totalEarnings">$0.00</div>
+                <p>Withdraw at $50</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Grid -->
+    <section class="videos-section">
+        <div class="container">
+            <h2>🎬 Featured Videos</h2>
+            <div class="video-grid" id="videoGrid">
+                <!-- Videos will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Banner -->
+    <div class="ad-banner">
+        <div class="container">
+            <div class="ad-content">
+                <p>📢 Advertisement</p>
+                <img src="images/ad-banner.jpg" alt="Ad" onerror="this.style.display='none'">
+                <div class="ad-placeholder">Your Ad Here - Contact us for advertising</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>📖 How You Earn Money</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Watch Videos</h3>
+                    <p>Watch any video on our platform</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Ads Play</h3>
+                    <p>Short ads play before videos</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>You Earn</h3>
+                    <p>$0.005 per video view</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Withdraw</h3>
+                    <p>Get paid at $50 via PayPal/Bank</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Connect to World Wide - Earn money watching videos</p>
+            <p class="footer-links">
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
