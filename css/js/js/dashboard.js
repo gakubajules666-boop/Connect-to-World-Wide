@@ -26,4 +26,6 @@ function loadDashboardData() {
         totalEarningsDash: `$${userData.totalEarnings.toFixed(2)}`,
         currentRate: currentRate.toFixed(4),
         monthlyProj: monthlyProjection.toFixed(2),
-        yearlyProj: yearlyProjection.toFixed
+        yearlyProj: yearlyProjection.toFixed(2)
+    };
+}
